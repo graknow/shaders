@@ -11,7 +11,7 @@ float map(vec3 pos)
 
 void main()
 {
-    vec2 uv = (gl_FragCoord.xy * 2.0 - u_resolution.xy) / u_resolution.x;
+    vec2 uv = (gl_FragCoord.xy * 2.0 - u_resolution.xy) / u_resolution.y;
 
     vec3 ro = vec3(0.0, 0.0, -3.0);
     vec3 rd = vec3(uv.xy, 1.0);

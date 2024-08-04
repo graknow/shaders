@@ -14,7 +14,7 @@ void rectangle(vec2 pixel, vec2 bl, vec2 tr, vec4 color)
 
 void main()
 {
-    vec2 uv = gl_FragCoord.xy / u_resolution.xy;
+    vec2 uv = (gl_FragCoord.xy * 2.0 - u_resolution.xy) / u_resolution.y;
 
     vec2 bottom_left = vec2(0.2, 0.1);
     vec2 top_right = vec2(0.3, 0.8);
